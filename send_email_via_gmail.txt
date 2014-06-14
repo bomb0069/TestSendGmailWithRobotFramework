@@ -6,9 +6,9 @@ Library		      Selenium2Library
 
 
 *** Testcases ***
-Send Email To Wingy via Gmail
+Send Email To Karan via Gmail
 	เปิด Gmail.com
-	#Login Gmail
+	Login Gmail
 	#ส่ง Email ให้กับ Wingy
 
 
@@ -20,8 +20,11 @@ Send Email To Wingy via Gmail
 	Page Should Contain    Sign in to continue to Gmail
 
 Login Gmail
+    Input Text          Email    wingyminus@gmail.com
+    Input Text          Passwd   thanabodee
+    Click Element       signIn
+    Wait Until Page Contains     COMPOSE    timeout=10
 
 
-
-ส่ง Email ให้กับ Wingy
+ส่ง Email ให้กับ Karan
 
