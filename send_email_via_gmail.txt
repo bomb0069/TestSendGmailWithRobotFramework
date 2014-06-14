@@ -9,7 +9,7 @@ Library		      Selenium2Library
 Send Email To Karan via Gmail
 	เปิด Gmail.com
 	Login Gmail
-	#ส่ง Email ให้กับ Wingy
+	ส่ง Email ให้กับ Karan
 
 
 *** Keywords ***
@@ -25,6 +25,6 @@ Login Gmail
     Click Element       signIn
     Wait Until Page Contains     COMPOSE    timeout=10
 
-
 ส่ง Email ให้กับ Karan
-
+    Click Element   xpath=//div[@class="z0"]/div
+    Wait Until Page Contains    New Message     timeout=10
