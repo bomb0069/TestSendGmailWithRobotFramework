@@ -28,3 +28,6 @@ Login Gmail
 ส่ง Email ให้กับ Karan
     Click Element   xpath=//div[@class="z0"]/div
     Wait Until Page Contains    New Message     timeout=10
+    Input Text      :oc     bomb0069@gmail.com
+    Input Text      subjectbox      ทดสอบส่งเมลหาพี่ Karan
+
