@@ -1,6 +1,6 @@
 *** Settings ***
 Library		      Selenium2Library
-Suite Teardown    Close All Browsers
+#Suite Teardown    Close All Browsers
 
 *** Variables ***
 
@@ -15,9 +15,12 @@ Send Email To Wingy via Gmail
 *** Keywords ***
 
 เปิด Gmail.com
-	Open Browser    http://gmail.com
+	Open Browser           http://gmail.com
+
+	Page Should Contain    Sign in to continue to Gmail
 
 Login Gmail
+
 
 
 ส่ง Email ให้กับ Wingy
