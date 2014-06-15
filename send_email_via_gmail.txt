@@ -20,14 +20,16 @@ Send Email To Karan via Gmail
 	Page Should Contain    Sign in to continue to Gmail
 
 Login Gmail
-    Input Text          Email    wingyminus@gmail.com
-    Input Text          Passwd   thanabodee
-    Click Element       signIn
+    Input Text      Email        robot2selenium@gmail.com
+    Input Text      Passwd       selenium
+    Click Element                signIn
+
     Wait Until Page Contains     COMPOSE    timeout=10
 
 ส่ง Email ให้กับ Karan
-    Click Element   xpath=//div[@class="z0"]/div
-    Wait Until Page Contains    New Message     timeout=10
-    Input Text      :oc     bomb0069@gmail.com
-    Input Text      subjectbox      ทดสอบส่งเมลหาพี่ Karan
+    Click Element                xpath=//div[@class="z0"]/div
+    Wait Until Page Contains     New Message     timeout=10
+
+    Input Text      to           bomb0069@gmail.com
+    Input Text      subjectbox   ทดสอบส่งเมลหาพี่ Karan
 
